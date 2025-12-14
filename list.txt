@@ -1,0 +1,24 @@
+###########
+# Подготовка к выполнению заданий
+###########
+
+1. sudo apt update && sudo apt upgrade -y
+2. sudo apt install suricata fail2ban hydra -y
+3. sudo suricata-update
+4. nano /etc/suricata/suricata.yaml
+
+###########
+# Задание 1
+###########
+
+3. sudo nmap -sS 10.0.1.6
+4. sudo nmap -sT 10.0.1.6
+5. sudo nmap -sA 10.0.1.6
+6. sudo nmap -sV 10.0.1.6
+
+7. sudo tail -F /var/log/suricata/eve.json | \
+jq -c 'select(.src_ip=="10.0.1.30")'
+
+###########
+# Задание 2
+###########
